@@ -1,6 +1,13 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
+
+      <div class="pxs-announcement-bar" style="background-color: #243a3e;color: #ffffff;">
+      <span class="pxs-announcement-bar-text-mobile"> {{ block.settings.text | escape }} </span>
+      <span  class="pxs-announcement-bar-text-desktop">{{ block.settings.text | escape }} </span>
+      </div>
+
+      
       <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
         {%- if block.settings.text != blank -%}
           {%- if block.settings.link != blank -%}
