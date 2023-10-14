@@ -43,7 +43,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "announcement-barr",
     "header"
   ]
 }
